@@ -56,7 +56,7 @@ header nav ul {
 header nav ul li a {
     margin: 10px 15px;
     font-weight:lighter;
-    font-size: 1.80vw;
+    font-size: 2.80vw;
 }
 
 header nav ul li a:hover {
@@ -190,3 +190,51 @@ header nav ul li a:hover {
 footer {
     background-color: #cd853f;
 }
+
+/*Media Q's */
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+   section {
+       padding: 35px 20px;
+   } 
+
+   .hero-sub {
+       flex: 1 100%;
+       font-size: 9px;
+       
+   }
+
+   .hero-img {
+     max-width: 100%;
+     overflow: hidden;
+   }
+
+   header nav ul li a {
+       font-size: 28px;
+   }
+ 
+}
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    section {
+        padding: 35px 20px;
+    } 
+ 
+    .hero-sub {
+        flex: 1 100%;
+        flex-shrink: inherit;
+        font-size: 9px;
+        
+        
+    }
+ 
+    .hero-img {
+      max-width: 100%;
+      overflow: hidden;
+    }
+ 
+    header nav ul li a {
+        font-size: 28px;
+    }
+  }
