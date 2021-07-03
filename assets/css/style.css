@@ -8,26 +8,152 @@
    :root {
        --primary-color: #58d68d;;
        --secondary-color: #239B56;
-       --tertiary-color:  #eb984e ;
+       --tertiary-color: white;
    }
 
 /* body styles*/
 
 body {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Hero Images*/
-
-.hero {
-    background-image: url("../images/hero.png");
-    background-size: cover;
-    background-position: center;
+/* Header Styles*/
+header {
+    padding: 40px 80px;
+    background-color:var(--secondary-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
+    background-image: url("/assets/images/hero.jpg");
+    background-size: cover;
     background-attachment: fixed;
-    background-position: 100%;
+    background-position:80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color:var(--tertiary-color);
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header a {
+    color:var(--tertiary-color);
+    text-align: right;
+}
+
+header nav {
+    margin: 10px 20px;
+}
+
+header nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 15px 30px;
+    font-weight:lighter;
+    font-size: 1.70vw;
+}
+
+header nav ul li a:hover {
+    background:var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 20px;
+}
+
+
+/*Hero styles and intro animation*/
+
+
+#hero-id {
+
+    display: flex;
+    flex-wrap: flex-end;
+    align-items: flex-start;
+    
+}
+
+.hero-img {
+    margin:0px auto;
+    padding:7px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height:  auto;
+
+}
+
+.hero-id {
+    padding: 80px;
+   
+}
+
+.hero-sub {
+    color: var(--tertiary-color);
+    font-size: 35px;
+    padding:20px;
+    position:absolute;
+    width: 100%;
+    bottom: 20%;
+    right: 100%;
+    animation: slide-in 250ms ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+   right: 100%;  
+  } 
+  100% {
+      right: 0;
+  } 
+}
+  /* About Me Styles*/
+
+.section-1 {
+    margin: 50px 20px;
+    padding: 60px 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+   
+}
+
+.me-img {
+    max-width: 100;
+    background-size: cover;
+}
+
+/* Work Section*/
+.tiles-content {
+    flex: 1 15%;
+    margin: auto;
+}
+
+.tiles-content img {
+    max-width: 30%
+}
+
+.tiles {
+    display:flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    text-align:center;
+}
+
+/* Contact Section*/
+
+.contact {
+    background-color: var(--secondary-color);
+    margin: 20px 0px;
 }
