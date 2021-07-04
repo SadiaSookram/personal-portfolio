@@ -131,40 +131,45 @@ header nav ul li a:hover {
 }
 .tiles-content {
     flex: 1 15%;
-    margin: 0;
+    margin:40px;
 }
 
 .tiles img {
     max-width: 50%;
     display: block;
+    width: 70%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.80);
 }
 .work-tiles {
     display:flex;
     flex-wrap: wrap;
-    flex-flow:wrap;
+    border: 3px black;
+    flex-basis: auto;   
+    
 }
 .runbuddy {
     display: flex;
     flex-wrap: wrap;
+    border: 3px black;
+    flex-basis: auto;
 }
 .runbuddy img {
-    margin:0;
-    padding:0;
-    border:0;
     font-size: 100;
     font: inherit;
     vertical-align: baseline;
-    max-width: 60%;
+    max-width: 80%;
+    border-radius: 35px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.80);
 }
 
 .work-tiles {
-    margin:0;
     padding:0;
     border:0;
     font-size: 100;
     font: inherit;
-    vertical-align: baseline;
-    
+    vertical-align: baseline; 
  }
  
 .tiles:hover {
