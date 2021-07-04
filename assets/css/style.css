@@ -91,7 +91,7 @@ header nav ul li a:hover {
     max-width: 90%;
     bottom: 20%;
     right: 100%;
-    animation: slide-in 250ms ease-out forwards;
+    animation: slide-in 450ms ease-out forwards;
     
 }
 
