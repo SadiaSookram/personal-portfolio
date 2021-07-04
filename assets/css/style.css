@@ -167,10 +167,10 @@ header nav ul li a:hover {
     
  }
  
-.tiles a:hover {
+.tiles:hover {
     background:var(--secondary-color);
     color: var(--tertiary-color);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .tiles footer {
@@ -192,6 +192,34 @@ footer {
 }
 
 /*Media Q's */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;  
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    
+    .contact-info iframe{
+      flex: 1 100%;
+    }
+  }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
    section {
